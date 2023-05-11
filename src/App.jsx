@@ -2,6 +2,10 @@ import { Routes, Route } from 'react-router-dom'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
+import AndrewThings from './pages/AndrewThings/AndrewThings'
+import JoeThings from './pages/JoeThings/JoeThings'
+import JulianThings from './pages/JulianThings/JulianThings'
+import ZachThings from './pages/ZachThings/ZachThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -136,6 +140,22 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-andrew-things"
+        element={<AndrewThings things={andrewsThings} />}
+      />
+      <Route
+        path="/the-joe-things"
+        element={<JoeThings things={joesThings} />}
+      />
+      <Route
+        path="/the-julian-things"
+        element={<JulianThings things={juliansThings} />}
+      />
+      <Route
+        path="/the-zach-things"
+        element={<ZachThings things={zachsThings} />}
       />
     </Routes>
   )
